@@ -1,0 +1,18 @@
+body {
+  background-color: aqua;
+  font-family: sans-serif;
+}
+
+h2 {
+  position: relative;
+  left: -2vmax;
+
+  background-color: white;
+  width: 50vw;
+  border-radius: 0 2vmax 2vmax 0;
+  transform: rotate(-4deg);
+  box-shadow: 1vmax 1vmax rgba(0, 0, 0, 0.33);
+
+  padding: 0 0 0 3vmax;
+  font-size: 4vmax;
+}

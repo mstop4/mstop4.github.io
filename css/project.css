@@ -1,0 +1,30 @@
+.project-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  max-width: 75vw;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+  justify-content: space-evenly;
+}
+
+.project {
+  width: 100%;
+  background-color: azure;
+}
+
+.project__preview {
+  width: 50%;
+  padding-top: 37.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1vmax;
+  border-color: white;
+  background-color: white;
+  background-image: url("../img/bunny.jpg");
+  background-position: center;
+  background-size: cover;
+}

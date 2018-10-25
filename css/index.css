@@ -1,3 +1,27 @@
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-25vmax) translateY(calc(25vmax * 0.07)) rotate(-4deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) translateY(0) rotate(-4deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(25vmax) translateY(calc(25vmax * 0.07)) rotate(4deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) translateY(0) rotate(4deg);
+    opacity: 1;
+  }
+}
+
 body {
   background-color: lightblue;
   font-family: sans-serif;
@@ -13,7 +37,7 @@ h1 {
   margin: 3vmax;
 }
 
-h2.left {
+.left {
   margin-left: 0;
   margin-right: auto;
   text-align: left;
@@ -21,6 +45,7 @@ h2.left {
   left: -2vmax;
 
   background-color: white;
+  opacity: 1;
   max-width: 22vmax;
   border-radius: 0 2vmax 2vmax 0;
   transform: rotate(-4deg);
@@ -28,9 +53,11 @@ h2.left {
 
   padding: 0 0 0 3vmax;
   font-size: 4vmax;
+
+  animation: slideInFromLeft 0.5s ease-out 0s 1 both;
 }
 
-h2.right {
+.right {
   margin-left: auto;
   margin-right: 0;
   text-align: right;
@@ -38,6 +65,7 @@ h2.right {
   right: -2vmax;
 
   background-color: white;
+  opacity: 1;
   max-width: 22vmax;
   border-radius: 2vmax 0 0 2vmax;
   transform: rotate(4deg);
@@ -45,6 +73,8 @@ h2.right {
 
   padding: 0 3vmax 0 0;
   font-size: 4vmax;
+
+  animation: slideInFromRight 0.5s ease-out 0s 1 both;
 }
 
 #tagline {

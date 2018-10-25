@@ -47,6 +47,15 @@ h2.right {
   font-size: 4vmax;
 }
 
+#tagline {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.tagline--text {
+  text-align: center;
+}
+
 .photo {
   width: 20vmax;
   height: 20vmax;

@@ -2,26 +2,38 @@
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  max-width: 75vw;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-column-gap: 1vw;
-  grid-row-gap: 1vw;
-  justify-content: space-evenly;
+  max-width: 1280px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-content: space-around;
 }
 
 .project {
-  width: 100%;
+  width: 92.5%;
   background-color: azure;
+  padding: 10px;
+  margin: 1vmax;
+  border-radius: 10px;
+  box-shadow: 1vmax 1vmax rgba(0, 0, 0, 0.1);
+}
+
+.project--left {
+  transform: rotate(2deg);
+}
+
+.project--right {
+  transform: rotate(-2deg);
 }
 
 .project__preview {
-  width: 50%;
-  padding-top: 37.5%;
+  width: 80%;
+  padding-top: 45%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-style: solid;
-  border-width: 1vmax;
+  border-width: 0.5vmax;
   border-color: white;
   background-color: white;
   background-image: url("../img/bunny.jpg");

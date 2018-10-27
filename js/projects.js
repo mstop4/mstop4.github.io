@@ -1,5 +1,7 @@
 var projectContainer;
 
+// ---
+
 var addProjectCard = function() {
   var projectCard = document.createElement('article');
   projectCard.classList.add('project');
@@ -17,6 +19,8 @@ var addProjectCard = function() {
 
   projectContainer.appendChild(projectCard);
 }
+
+// ----
 
 document.addEventListener("DOMContentLoaded", function() { 
   projectContainer = document.getElementsByClassName('project-container')[0];

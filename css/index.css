@@ -1,6 +1,6 @@
 :root {
   --slide-angle: 4deg;
-  --slide-angle-tan: 0.07; /* slide-start-tan = tan(slide-angle) */;
+  --slide-angle-tan: 0.07; /* no trig functions in CSS yet :( */
   --slide-start-x: 25vmax;
   --slide-start-y: calc(var(--slide-start-x) * var(--slide-angle-tan)); 
 }
@@ -46,17 +46,17 @@ body {
   font-family: sans-serif;
 }
 
-.hidden {
-  display: none;
-}
-
 h1 {
   text-align: center;
   font-size: 6vmax;
   margin: 3vmax;
 }
 
-.left {
+.hidden {
+  display: none;
+}
+
+.heading__left {
   margin-left: 0;
   margin-right: auto;
   text-align: left;
@@ -76,7 +76,7 @@ h1 {
   animation: slideInFromLeft 0.5s ease-out 0s 1 both;
 }
 
-.right {
+.heading__right {
   margin-left: auto;
   margin-right: 0;
   text-align: right;
@@ -109,8 +109,7 @@ h1 {
   width: 20vmax;
   height: 20vmax;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border-style: solid;
   border-width: 1vmax;
   border-radius: 20vmax;

@@ -19,7 +19,7 @@
       translateX(0) 
       translateY(0)
       rotate(calc(-1 * var(--slide-angle)));
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -27,7 +27,7 @@
   from {
     transform:
       translateX(var(--slide-start-x))
-      translateY(calc(-1 * var(--slide-start-y)))
+      translateY(var(--slide-start-y))
       rotate(var(--slide-angle));
     opacity: 0;
   }
@@ -37,7 +37,7 @@
       translateX(0) 
       translateY(0)
       rotate(var(--slide-angle));
-    opacity: 0;
+    opacity: 1;
   }
 }
 

@@ -1,31 +1,21 @@
-var projectContainer;
+var addProjectCards = function() {
 
-// ---
+  for (var i = 0; i < data.projects.length; i++) {
+    var projectCard = document.createElement('article');
+    projectCard.classList.add('project');
+    coinFlip() === 0 ? projectCard.classList.add('project--left') : projectCard.classList.add('project--right');
 
-var addProjectCard = function() {
-  var projectCard = document.createElement('article');
-  projectCard.classList.add('project');
-  coinFlip() === 0 ? projectCard.classList.add('project--left') : projectCard.classList.add('project--right');
+    var projectPreview = document.createElement('div');
+    projectPreview.classList.add('project__preview');
+    projectPreview.style.backgroundImage = 'url(' + data.projects[i].preview + ')';
 
-  var projectPreview = document.createElement('div');
-  projectPreview.classList.add('project__preview');
+    var projectTitle = document.createElement('h3');
+    projectTitle.classList.add('project__title');
+    projectTitle.innerText = data.projects[i].title;
 
-  var projectTitle = document.createElement('h3');
-  projectTitle.classList.add('project__title');
-  projectTitle.innerText = 'Bunny';
+    projectCard.appendChild(projectPreview);
+    projectCard.appendChild(projectTitle);
 
-  projectCard.appendChild(projectPreview);
-  projectCard.appendChild(projectTitle);
-
-  projectContainer.appendChild(projectCard);
-}
-
-// ----
-
-document.addEventListener("DOMContentLoaded", function() { 
-  projectContainer = document.getElementsByClassName('project-container')[0];
-  for (var i = 0; i < 8; i++) {
-    addProjectCard();
+    projectList.appendChild(projectCard);
   }
-  console.log('Hello');
-});
+}

@@ -1,24 +1,43 @@
+:root {
+  --slide-angle: 4deg;
+  --slide-angle-tan: 0.07; /* slide-start-tan = tan(slide-angle) */;
+  --slide-start-x: 25vmax;
+  --slide-start-y: calc(var(--slide-start-x) * var(--slide-angle-tan)); 
+}
+
 @keyframes slideInFromLeft {
   from {
-    transform: translateX(-25vmax) translateY(calc(25vmax * 0.07)) rotate(-4deg);
+    transform:
+      translateX(calc(-1 * var(--slide-start-x))) 
+      translateY(var(--slide-start-y))
+      rotate(calc(-1 * var(--slide-angle)));
     opacity: 0;
   }
 
   to {
-    transform: translateX(0) translateY(0) rotate(-4deg);
-    opacity: 1;
+    transform:
+      translateX(0) 
+      translateY(0)
+      rotate(calc(-1 * var(--slide-angle)));
+    opacity: 0;
   }
 }
 
 @keyframes slideInFromRight {
   from {
-    transform: translateX(25vmax) translateY(calc(25vmax * 0.07)) rotate(4deg);
+    transform:
+      translateX(var(--slide-start-x))
+      translateY(calc(-1 * var(--slide-start-y)))
+      rotate(var(--slide-angle));
     opacity: 0;
   }
 
   to {
-    transform: translateX(0) translateY(0) rotate(4deg);
-    opacity: 1;
+    transform:
+      translateX(0) 
+      translateY(0)
+      rotate(var(--slide-angle));
+    opacity: 0;
   }
 }
 

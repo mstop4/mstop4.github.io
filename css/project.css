@@ -1,3 +1,32 @@
+:root {
+  --project__start-angle: 43deg;
+  --project__end-angle: 2deg;
+}
+
+@keyframes cardAppear--left{
+  from {
+    transform: scale(0) rotate(calc(var(--project__start-angle) * -1));
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) rotate(var(--project__end-angle));
+    opacity: 1;
+  }
+}
+
+@keyframes cardAppear--right{
+  from {
+    transform: scale(0) rotate(var(--project__start-angle));
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) rotate(calc(var(--project__end-angle) * -1));
+    opacity: 1;
+  }
+}
+
 .project-container {
   margin-left: auto;
   margin-right: auto;
@@ -20,10 +49,12 @@
 
 .project--left {
   transform: rotate(2deg);
+  animation: cardAppear--left 0.3s ease-out 0s forwards;
 }
 
 .project--right {
   transform: rotate(-2deg);
+  animation: cardAppear--right 0.3s ease-out 0s forwards;
 }
 
 .project__preview {
@@ -39,4 +70,8 @@
   background-image: url("../img/bunny.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.project__title {
+
 }

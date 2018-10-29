@@ -26,19 +26,24 @@ var data = {
       "types": ["utility"]
     },
     {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg",
-      "types": ["webapp"]
+      "title": "Aborescence",
+      "preview": "img/aborescence.png",
+      "types": ["game"]
     },
     {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg",
-      "types": ["webapp"]
+      "title": "I am Rubba, You Are Gloo",
+      "preview": "img/iamrubba.png",
+      "types": ["game"]
     },
     {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg",
-      "types": ["webapp"]
+      "title": "dot.Market 2",
+      "preview": "img/dot.market2.png",
+      "types": ["game"]
+    },
+    {
+      "title": "Moeblob Adventure",
+      "preview": "img/moeblobadventure.png",
+      "types": ["game"]
     },
   ],
 

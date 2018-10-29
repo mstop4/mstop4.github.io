@@ -78,9 +78,16 @@
 }
 
 .project__title {
+  padding: 0 auto;
   display: inline-block;
   flex-grow: 2;
   font-size: 2vmax;
+}
+
+@media screen and (min-width: 1280px) {
+  .project__title {
+    font-size: 25.6px;
+  }
 }
 
 .project__types {

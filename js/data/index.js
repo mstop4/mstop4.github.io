@@ -1,36 +1,44 @@
 var data = {
   "projects": [
     {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "title": "GML Script Wizard",
+      "preview": "img/gml-script-wizard.png",
+      "types": ["webapp"]
+    },
+    {
+      "title": "GIFcentration",
+      "preview": "img/gifcentration.png",
+      "types": ["webapp", "game"]
+    },
+    {
+      "title": "Fractured Flicks",
+      "preview": "img/fractured-flicks.png",
+      "types": ["webapp", "game"]
+    },
+    {
+      "title": "Sync Timer",
+      "preview": "img/sync-timer.png",
+      "types": ["webapp"]
+    },
+    {
+      "title": "FMODGMS",
+      "preview": "img/fmodgms.png",
+      "types": ["utility"]
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "preview": "img/bunny.jpg",
+      "types": ["webapp"]
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "preview": "img/bunny.jpg",
+      "types": ["webapp"]
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
-    },
-    {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg"
-    },
-    {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg"
-    },
-    {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg"
-    },
-    {
-      "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "preview": "img/bunny.jpg",
+      "types": ["webapp"]
     },
   ],
 

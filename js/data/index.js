@@ -1,44 +1,49 @@
 var data = {
   "projects": [
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "GML Script Wizard",
+      "preview": "img/gml-script-wizard.png",
+      "types": ["webapp"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "GIFcentration",
+      "preview": "img/gifcentration.png",
+      "types": ["webapp", "game"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "Fractured Flicks",
+      "preview": "img/fractured-flicks.png",
+      "types": ["webapp", "game"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "Sync Timer",
+      "preview": "img/sync-timer.png",
+      "types": ["webapp"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "FMODGMS",
+      "preview": "img/fmodgms.png",
+      "types": ["utility"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "Aborescence",
+      "preview": "img/aborescence.png",
+      "types": ["game"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "I am Rubba, You Are Gloo",
+      "preview": "img/iamrubba.png",
+      "types": ["game"]
     },
     {
-      "title": "Bunny",
-      "previewStatic": "img/bunny.jpg",
-      "previewAnimated": "img/bunny2.jpg"
+      "title": "dot.Market 2",
+      "preview": "img/dot.market2.png",
+      "types": ["game"]
+    },
+    {
+      "title": "Moeblob Adventure",
+      "preview": "img/moeblobadventure.png",
+      "types": ["game"]
     },
   ],
 

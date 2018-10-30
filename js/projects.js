@@ -1,21 +1,28 @@
 const addProjectCards = function() {
 
   for (let i = 0; i < data.projects.length; i++) {
+
+    // Project Card
+
     let projectCard = document.createElement('article');
     projectCard.classList.add('project');
     coinFlip() === 0 ? projectCard.classList.add('project--left') : projectCard.classList.add('project--right');
 
-    let projectPreview = document.createElement('div');
-    projectPreview.classList.add('project__preview');
-    projectPreview.style.backgroundImage = 'url(' + data.projects[i].preview + ')';
+    // - Project Preview
+
+    let projectPreviewStatic = document.createElement('div');
+    projectPreviewStatic.classList.add('project__preview');
+    projectPreviewStatic.style.backgroundImage = 'url(' + data.projects[i].preview + ')';
 
     projectCard.addEventListener('mouseenter', function() {
-      projectPreview.classList.add('hidden');
+      projectPreviewStatic.classList.add('hidden');
     });
 
     projectCard.addEventListener('mouseleave', function() {
-      projectPreview.classList.remove('hidden');
+      projectPreviewStatic.classList.remove('hidden');
     });
+
+    // - Project Short Info
 
     let projectShortInfo = document.createElement('div');
     projectShortInfo.classList.add('project__short-info');
@@ -52,7 +59,7 @@ const addProjectCards = function() {
     projectShortInfo.appendChild(projectTitle);
     projectShortInfo.appendChild(projectTypes);
 
-    projectCard.appendChild(projectPreview);
+    projectCard.appendChild(projectPreviewStatic);
     projectCard.appendChild(projectShortInfo);
 
     projectList.appendChild(projectCard);

@@ -69,7 +69,7 @@
   background-position: center;
   background-size: cover;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
   z-index: 0;
 }
 
@@ -86,7 +86,7 @@
   background-position: center;
   background-size: cover;
   opacity: 1;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
   z-index: 1;
 }
 
@@ -119,4 +119,3 @@
   align-items: center;
   flex-grow: 1;
 }
-

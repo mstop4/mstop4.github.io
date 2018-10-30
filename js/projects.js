@@ -1,27 +1,35 @@
-var addProjectCards = function() {
+const addProjectCards = function() {
 
-  for (var i = 0; i < data.projects.length; i++) {
-    var projectCard = document.createElement('article');
+  for (let i = 0; i < data.projects.length; i++) {
+    let projectCard = document.createElement('article');
     projectCard.classList.add('project');
     coinFlip() === 0 ? projectCard.classList.add('project--left') : projectCard.classList.add('project--right');
 
-    var projectPreview = document.createElement('div');
+    let projectPreview = document.createElement('div');
     projectPreview.classList.add('project__preview');
     projectPreview.style.backgroundImage = 'url(' + data.projects[i].preview + ')';
 
-    var projectShortInfo = document.createElement('div');
+    projectCard.addEventListener('mouseenter', function() {
+      projectPreview.classList.add('hidden');
+    });
+
+    projectCard.addEventListener('mouseleave', function() {
+      projectPreview.classList.remove('hidden');
+    });
+
+    let projectShortInfo = document.createElement('div');
     projectShortInfo.classList.add('project__short-info');
 
-    var projectTitle = document.createElement('h3');
+    let projectTitle = document.createElement('h3');
     projectTitle.classList.add('project__title');
     projectTitle.innerText = data.projects[i].title;
 
-    var projectTypes = document.createElement('span');
+    let projectTypes = document.createElement('span');
     projectTypes.classList.add('project__types');
 
-    for (var j = 0; j < data.projects[i].types.length; j++) {
+    for (let j = 0; j < data.projects[i].types.length; j++) {
 
-      var projectTypeIcon = document.createElement('i');
+      let projectTypeIcon = document.createElement('i');
       projectTypeIcon.classList.add('fa-fw', 'fa-2x');
 
       switch (data.projects[i].types[j]) {

@@ -57,11 +57,10 @@
 }
 
 .project__preview {
-  width: 80%;
-  padding-top: 45%;
+  width: 90%;
+  padding-top: 50.625%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border-style: solid;
   border-width: 0.5vmax;
   border-color: white;
@@ -69,6 +68,30 @@
   background-image: url("../img/bunny.jpg");
   background-position: center;
   background-size: cover;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 0;
+}
+
+.project__preview--anim {
+  width: 90%;
+  padding-top: 50.625%;
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 0.5vmax;
+  border-color: white;
+  background-color: white;
+  background-image: url("../img/bunny.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .project__short-info {

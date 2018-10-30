@@ -12,6 +12,7 @@ var addContactCards = function() {
     }
 
     var contactText = document.createElement('a');
+    contactText.href = data.contacts[i].url;
     contactText.innerText = data.contacts[i].displayText;
 
     contactCard.appendChild(contactFAIcon);

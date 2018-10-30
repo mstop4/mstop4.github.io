@@ -31,7 +31,7 @@
   margin: 0 auto;
   display: grid;
   max-width: 1280px;
-  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-content: space-around;
@@ -69,6 +69,10 @@
   background-image: url("../img/bunny.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.project__preview:hover {
+  background-image: url("../img/bunny2.jpg");
 }
 
 .project__title {

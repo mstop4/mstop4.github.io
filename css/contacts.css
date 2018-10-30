@@ -1,8 +1,8 @@
 .contact-list {
   margin: 0 auto;
   display: grid;
-  max-width: 60vw;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 960px;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   justify-content: space-around;
@@ -17,4 +17,8 @@
   margin: 1vmax;
   border-radius: 10px;
   box-shadow: 1vmax 1vmax rgba(0, 0, 0, 0.1);
+}
+
+.contact-list__entry a {
+  margin: 10px;
 }

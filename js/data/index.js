@@ -2,35 +2,43 @@ var data = {
   "projects": [
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
     {
       "title": "Bunny",
-      "preview": "img/bunny.jpg"
+      "previewStatic": "img/bunny.jpg",
+      "previewAnimated": "img/bunny2.jpg"
     },
   ],
 
@@ -51,8 +59,8 @@ var data = {
       "faIconClasses": ["fab", "fa-github"]
     },
     {
-      "displayText": "bunny.rabbit.com",
-      "url": "bunny.rabbit.com",
+      "displayText": "@QuadolorGames",
+      "url": "https://twitter.com/QuadolorGames",
       "faIconClasses": ["fab", "fa-twitter"]
     }
   ]

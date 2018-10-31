@@ -1,4 +1,6 @@
-const addProjectCards = function() {
+const { coinFlip } = require('./helpers.js');
+
+const addProjectCards = function(parentEl, data) {
 
   for (let i = 0; i < data.projects.length; i++) {
 
@@ -62,6 +64,10 @@ const addProjectCards = function() {
     projectCard.appendChild(projectPreviewStatic);
     projectCard.appendChild(projectShortInfo);
 
-    projectList.appendChild(projectCard);
+    parentEl.appendChild(projectCard);
   }
+}
+
+module.exports = {
+  addProjectCards
 }

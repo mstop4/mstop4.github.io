@@ -1,3 +1,0 @@
-var getWeather = function(location) {
-  
-}

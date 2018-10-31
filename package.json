@@ -1,0 +1,26 @@
+{
+  "name": "mstop4.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx browserify -p tinyify src/js/index.js > dist/bundle.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstop4/mstop4.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mstop4/mstop4.github.io/issues"
+  },
+  "homepage": "https://github.com/mstop4/mstop4.github.io#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "gh-pages": "^2.0.1",
+    "tinyify": "^2.4.3"
+  }
+}

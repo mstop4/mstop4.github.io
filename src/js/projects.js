@@ -17,11 +17,11 @@ const addProjectCards = function(parentEl, data) {
     projectPreviewStatic.style.backgroundImage = 'url(' + data.projects[i].preview + ')';
 
     projectCard.addEventListener('mouseenter', function() {
-      projectPreviewStatic.classList.add('hidden');
+      projectPreviewStatic.classList.add('project-preview--hidden');
     });
 
     projectCard.addEventListener('mouseleave', function() {
-      projectPreviewStatic.classList.remove('hidden');
+      projectPreviewStatic.classList.remove('project-preview--hidden');
     });
 
     // - Project Short Info

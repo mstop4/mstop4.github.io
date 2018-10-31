@@ -1,4 +1,4 @@
-var data = {
+module.exports = {
   "projects": [
     {
       "title": "GML Script Wizard",

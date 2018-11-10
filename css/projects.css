@@ -27,20 +27,6 @@
   }
 }
 
-@keyframes project-pop--left {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 .project-list {
   margin: 0 auto;
   display: grid;
@@ -61,7 +47,7 @@
 .project {
   visibility: visible;
   width: 92.5%;
-  background-color: azure;
+  background-color: #D1F2EB;
   padding: 10px;
   margin: 1vmax;
   border-radius: 10px;

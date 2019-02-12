@@ -4,12 +4,13 @@
   <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Mali:400,700" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
   </head>
   <body>
 
+    <!-- Modal -->
     <div class="modal modal--hidden">
       <div class="modal__back modal__back--hidden"></div>
       <aside class="modal__front modal__front--hidden">
@@ -20,6 +21,11 @@
         </div>
         <div class="info__title"></div>
         <div class="info__text"></div>
+        <div class="info__stack">
+          <ul class="stack-list">
+            <!-- Stack chips go here -->
+          </ul>
+        </div>
         <div class="links__container">
 
           <div id="source-icon">
@@ -42,36 +48,68 @@
       </aside>
     </div>
 
+    <!-- Rest of the Page-->
     <main>
       <h1>Jonathan Lam</h1>
       <div class="photo"></div>
       <section id="tagline">
-        <h3 class="tagline--text">Developer of interactive applications. Believes that the marriage of code, art, and music can create beautiful things.</h3>
+        <h3 class="tagline__text">Developer of interactive applications. Believes that the marriage of code, art, and music can create beautiful things.</h3>
       </section>
 
       <section id="bio">
         <h2 class="heading heading__left heading--hidden">About Me</h2>
-        <p>I am from <span id="location"></span>, <span id="weather"></span>.</p>
+        <div class="bio-list">
+
+          <div class="bio__base bio__text">
+            <div>Hails from the city of <span id="bio__location"></span></div>
+          </div>
+
+          <div class="bio__base bio__card bio__map bio--left">
+            <!-- Map goes in here-->
+          </div>
+
+          <div class="bio__base bio__text">
+            <div>Fascinated by the <strong>Internet of things</strong> and the <strong>web as a programmable platform</strong></div>
+          </div>
+
+          <div class="bio__base bio__card bio--right">
+            <ul class="bio__factoids">
+              <li class="weather-text"><!-- Weather info --></li>
+              <li class="today-text"></li>
+              <li>
+                <strong>What's that word that sounds like<br/>"<input type="text" class="datamuse-query" value="wusstersher">"?</strong>
+                <input type="button" value="👈 Try Me" class="datamuse-search">
+                <div class="datamuse-answer datamuse-answer--hidden"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bio__base bio__text">
+            <div>Enjoys <strong>learning</strong> new things and <strong>teaching</strong> others</div>
+          </div>
+
+          <div class="bio__base bio__card bio--left">
+            Text
+          </div>
+
+          <div class="bio__base bio__text">
+            <div>Always strives to <strong>practice my craft regularly</strong>, be it <strong>code or art</strong></div>
+          </div>
+  
+          <div class="bio__base bio__card bio__activity bio--right">
+            <div class="github-chart">
+              <div class="github-events">
+                <h4 class="github-event-title">Latest Github Activity</h4>
+                <ul class="github-event-list"></ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
       
       <section id="projects">
         <h2 class="heading heading__right heading--hidden">Projects</h2>
-        <div class="project__legend">
-          <ul>
-            <li>
-              <div><i class="fa-fw fa-2x fas fa-globe"></i></div>
-              <div>Web App</div>
-            </li>
-            <li>
-              <div><i class="fa-fw fa-2x fas fa-gamepad"></i></div>
-              <div>Game</div>
-            </li>
-            <li>
-              <div><i class="fa-fw fa-2x fas fa-wrench"></i></div>
-              <div>Library</div>
-            </li>
-          </ul>
-        </div>
         <div class="project__list">
           <!-- Project Cards go here -->
         </div>
@@ -85,6 +123,7 @@
         </div>
       </section>
     </main>
-  </body> 
+
+  </body>
   <script type="text/javascript" src="./bundle.js"></script>
 </html>

@@ -1,151 +1,163 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <head>
-    <title>Jonathan Lam</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+<meta charset="utf-8">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#51b5cf">
-    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/browserconfig.xml">
-    <meta name="theme-color" content="#51b5cf">
-  </head>
-  <body>
+<head>
+  <title>Jonathan Lam</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-    <div id="warnings">
-      <noscript>
-          <div id="no-js" class="warning-banner">
-          Hello! Welcome to the portfolio of <strong>Jonathan Lam</strong>: Full-stack Web and Game Developer.<br/><br/>
-          It appears you have <strong>Javascript disabled</strong> in your browser.
-          Please consider enabling Javascript or whilelisting this site to get the full experience.
-          <br/><br/>
-          If enabling Javascript is not possible, you can download a copy of my <strong>resumé</strong> with my contact information <strong><a href="downloads/Jonathan_Lam_resume.pdf" target="_blank">here</a></strong>.
-          </div>
-        </noscript>
-      <div id="is-ie10-" class="warning-banner hidden">
-        <strong>Warning</strong><br/>You are running an <strong>unsupported version</strong> of Internet Explorer.
-        Certain features of this site may not be available as a result.
-        This site requires at least Internet Explorer 11, but I recommend viewing it with a modern browser.
-        <strong><a href="http://outdatedbrowser.com/en" target="_blank">Click here</a></strong> for a list of recommended browsers.
-        <br/><br/>
-        If using a different browser is not possible, you can download a copy of my <strong>resumé</strong> with my contact information <strong><a href="downloads/Jonathan_Lam_resume.pdf" target="_blank">here</a></strong>.
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#51b5cf">
+  <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#51b5cf">
+</head>
+
+<body>
+
+  <div id="warnings">
+    <noscript>
+      <div id="no-js" class="warning-banner">
+        Hello! Welcome to the portfolio of <strong>Jonathan Lam</strong>: Full-stack Web and Game Developer.<br /><br />
+        It appears you have <strong>Javascript disabled</strong> in your browser.
+        Please consider enabling Javascript or whilelisting this site to get the full experience.
+        <br /><br />
+        If enabling Javascript is not possible, you can download a copy of my <strong>resumé</strong> with my contact
+        information <strong><a href="downloads/Jonathan_Lam_resume.pdf" target="_blank">here</a></strong>.
       </div>
+    </noscript>
+    <div id="is-ie10-" class="warning-banner hidden">
+      <strong>Warning</strong><br />You are running an <strong>unsupported version</strong> of Internet Explorer.
+      Certain features of this site may not be available as a result.
+      This site requires at least Internet Explorer 11, but I recommend viewing it with a modern browser.
+      <strong><a href="http://outdatedbrowser.com/en" target="_blank">Click here</a></strong> for a list of recommended
+      browsers.
+      <br /><br />
+      If using a different browser is not possible, you can download a copy of my <strong>resumé</strong> with my
+      contact information <strong><a href="downloads/Jonathan_Lam_resume.pdf" target="_blank">here</a></strong>.
     </div>
+  </div>
 
-    <!-- Modal -->
-    <div class="modal modal--hidden">
-      <div class="modal__back"></div>
-      <aside class="modal__front">
+  <!-- Modal -->
+  <div class="modal modal--hidden">
+    <div class="modal__back"></div>
+    <aside class="modal__front">
 
-        <div class="info__preview">
-          <video class="info__preview-video" loop muted preload="none">
-            <source src="" type="video/mp4">
-          </video>
-          <div class="info__title"></div>
-        </div>
-        
-        <div class="info__text"></div>
-        <div class="info__stack">
-          <ul class="stack-list">
-            <!-- Stack chips go here -->
-          </ul>
-        </div>
-        <div class="links__container">
+      <div class="info__preview">
+        <video class="info__preview-video" loop muted preload="none">
+          <source src="" type="video/mp4">
+        </video>
+        <div class="info__title"></div>
+      </div>
 
-          <div id="source-column" class="links__column">
-            <div class="links__icon">
-              <span class="icon-files-empty"></span>
-            </div>
-
-            <ul id="source-links" class="links__list">
-              <!-- Source links go here -->
-            </ul>
-          </div>
-
-          <div id="demo-column" class="links__column">
-            <div class="links__icon">
-              <span class="icon-cloud-download"></span>
-            </div>
-
-            <ul id="demo-links" class="links__list">
-              <!-- Demo links go here -->
-            </ul>
-          </div>
-
-        </div>
-      </aside>
-    </div>
-
-    <!-- Rest of the Page-->
-    <main>
-      <section id="splash">
-
-        <!-- Modern background-->
-        <div class="splash__background"></div>
-
-        <!-- IE background-->
-        <div id="background-ie" class="splash__background"></div>
-
-        <div class="splash__wrapper splash--hidden">
-          <h1 class="splash--hidden">Jonathan Lam</h1>
-          <h3 class="tagline splash--hidden">Game and Full-Stack Web Developer</h3>
-          <div class="resume splash--hidden">
-            <a href="downloads/Jonathan_Lam_resume.pdf" target="_blank" class="resume__link">Resumé</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="bio">
-        <h2 class="heading heading__left heading--hidden">About Me</h2>
-          <ul class="bio__text bio__text--hidden">
-          </ul>
-      </section>
-
-      <section id="skills">
-        <h2 class="heading heading__right heading--hidden">Key Skills</h2>
-        <ul class="skills__list skills--hidden">
+      <div class="info__text"></div>
+      <div class="info__stack">
+        <ul class="stack-list">
+          <!-- Stack chips go here -->
         </ul>
-      </section>
-      
-      <section id="projects">
-        <h2 class="heading heading__left heading--hidden">Projects</h2>
-        <p>Click on a card to learn more about a project!</p>
-        <div class="project__list">
-          <!-- Project Cards go here -->
+      </div>
+      <div class="links__container">
+
+        <div id="source-column" class="links__column">
+          <div class="links__icon">
+            <span class="icon-files-empty"></span>
+          </div>
+
+          <ul id="source-links" class="links__list">
+            <!-- Source links go here -->
+          </ul>
         </div>
 
-        <p>Interested in more of my work? You can find additional projects at:</p>
-        <div id="portfolio-list" class="external-list">
-          <!-- Portfolio Cards go here -->
-        </div>
-      </section>
+        <div id="demo-column" class="links__column">
+          <div class="links__icon">
+            <span class="icon-cloud-download"></span>
+          </div>
 
-      <section id="contact">
-        <h2 class="heading heading__right heading--hidden">Contact Me</h2>
-        <p>Want to work together, or just have a chat? Get in touch with me via:</p>
-        <div id="contact-list" class="external-list">
-          <!-- Contact Cards go here -->
+          <ul id="demo-links" class="links__list">
+            <!-- Demo links go here -->
+          </ul>
         </div>
 
-        <p>Didn't get a copy of my resumé earlier? Not to worry, here's another chance:</p>
-        <div id="resume-redux" class="external-list">
-          <!-- Resume goes here -->
+      </div>
+    </aside>
+  </div>
+
+  <!-- Rest of the Page-->
+  <main>
+    <section id="splash">
+
+      <!-- Modern background-->
+      <div class="splash__background"></div>
+
+      <!-- IE background-->
+      <div id="background-ie" class="splash__background"></div>
+
+      <div class="splash__wrapper splash--hidden">
+        <h1 class="splash--hidden">Jonathan Lam</h1>
+        <h3 class="tagline splash--hidden">Game and Full-Stack Web Developer</h3>
+        <div class="resume splash--hidden">
+          <a href="downloads/Jonathan_Lam_resume.pdf" target="_blank" class="resume__link">Resumé</a>
         </div>
+      </div>
+    </section>
 
-      </section>
-      <footer>
-      </footer>
-    </main>
+    <section id="bio">
+      <h2 class="heading heading__left heading--hidden">About Me</h2>
+      <ul class="bio__text bio__text--hidden">
+      </ul>
+    </section>
 
-  </body>
-  <script src="./bundle.js"></script>
+    <section id="skills">
+      <h2 class="heading heading__right heading--hidden">Key Skills</h2>
+      <ul class="skills__list skills--hidden">
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="heading heading__left heading--hidden">Projects</h2>
+      <p>Click on a card to learn more about a project!</p>
+      <div class="project__list">
+        <!-- Project Cards go here -->
+      </div>
+
+      <p>Interested in more of my work? You can find additional projects at:</p>
+      <div id="portfolio-list" class="external-list">
+        <!-- Portfolio Cards go here -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="heading heading__right heading--hidden">Contact Me</h2>
+      <p>Want to work together, or just have a chat? Get in touch with me via:</p>
+      <div id="contact-list" class="external-list">
+        <!-- Contact Cards go here -->
+      </div>
+
+      <p>Didn't get a copy of my resumé earlier? Not to worry, here's another chance:</p>
+      <div id="resume-redux" class="external-list">
+        <!-- Resume goes here -->
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-text">
+      <p>© 2018-2019 Jonathan Lam</p>
+      <p>Built with HTML5, SASS, and ES6+. Babel, Browserify, and Gulp helped too. Check out the project on <a
+          href="https://github.com/mstop4/portfolio-src" target="_blank">Github</a>.</p>
+    </div>
+  </footer>
+
+</body>
+<script src="./bundle.js"></script>
+
 </html>
